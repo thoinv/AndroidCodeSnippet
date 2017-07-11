@@ -1,0 +1,75 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:textColorPrimary">@color/white_color</item>
+        <item name="android:windowTranslucentStatus" tools:targetApi="19">true</item>
+        <!--<item name="android:statusBarColor" tools:targetApi="21">@color/statusBarColor</item>-->
+        <item name="android:windowDrawsSystemBarBackgrounds" tools:targetApi="21">true</item>
+    </style>
+
+    <style name="Theme.AppCompat.Translucent" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation</item>
+    </style>
+
+    <style name="PopupAnimationRight" mce_bogus="1" parent="android:Animation">
+        <!--<item name="android:windowEnterAnimation">@animator/popup_rightin</item>-->
+        <!--<item name="android:windowExitAnimation">@animator/popup_rightout</item>-->
+    </style>
+
+    <!-- PopDownMenu -->
+
+    <!-- PopUpMenu -->
+
+    <style name="Theme.Activity.Dialog" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <!--<item name="colorAccent">@color/green_trans</item>-->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:windowEnterAnimation">@null</item>
+        <item name="android:windowExitAnimation">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowTranslucentStatus" tools:targetApi="kitkat">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <declare-styleable name="MaterialViewPager">
+        <attr name="viewpager_header" format="reference" />
+        <attr name="viewpager_logo" format="reference" />
+        <attr name="viewpager_pagerTitleStrip" format="reference" />
+        <attr name="viewpager_viewpager" format="reference" />
+        <attr name="viewpager_logoMarginTop" format="dimension" />
+        <attr name="viewpager_color" format="color" />
+        <attr name="viewpager_headerHeight" format="dimension" />
+        <attr name="viewpager_headerAlpha" format="float" />
+        <attr name="viewpager_imageHeaderDarkLayerAlpha" format="float" />
+        <attr name="viewpager_hideToolbarAndTitle" format="boolean" />
+        <attr name="viewpager_hideLogoWithFade" format="boolean" />
+        <attr name="viewpager_enableToolbarElevation" format="boolean" />
+        <attr name="viewpager_parallaxHeaderFactor" format="float" />
+        <attr name="viewpager_headerAdditionalHeight" format="dimension" />
+        <attr name="viewpager_displayToolbarWhenSwipe" format="boolean" />
+        <attr name="viewpager_transparentToolbar" format="boolean" />
+        <attr name="viewpager_animatedHeaderImage" format="boolean" />
+        <attr name="viewpager_disableToolbar" format="boolean" />
+
+    </declare-styleable>
+    <color name="white_color">#fff</color>
+
+    <style name="DialogTheme">
+        <item name="android:windowEnterAnimation">@anim/slide_up</item>
+        <item name="android:windowExitAnimation">@anim/slide_bottom</item>
+    </style>
+</resources>
+
+
