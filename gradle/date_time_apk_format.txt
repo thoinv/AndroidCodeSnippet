@@ -1,0 +1,28 @@
+  buildTypes {
+        release {
+            minifyEnabled true
+            signingConfig signingConfigs.config
+            proguardFiles 'proguard-rules.pro'
+        }
+        debug {
+            signingConfig signingConfigs.config
+        }
+
+        applicationVariants.all { variant ->
+            variant.outputs.each { output ->
+                def file = output.outputFile
+                def filename = getCurrentDate() + "_" + getBuildTime() + "_"  + defaultConfig.applicationId + ".apk"
+                output.outputFile = new File(file.parent, filename)
+            }
+        }
+    }
+
+static def getCurrentDate() {
+    SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMdd");
+    return sdf.format(new Date());
+}
+
+static def getBuildTime() {
+    def df = new SimpleDateFormat("HHmm") //you can change it
+    return df.format(new Date())
+}
