@@ -1,0 +1,3 @@
+android:includeFontPadding="false"
+android:lineSpacingExtra="0dp"
+android:scrollHorizontally="false"
